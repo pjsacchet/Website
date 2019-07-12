@@ -13,47 +13,134 @@
     <meta charset="utf-8">
     <meta name="description" content="A look at my education">
       <title>Patrick's Education</title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ccc;
+    }
+    header {
+      background-color: #666;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+    }
+    nav {
+      float:left;
+      width: 10%;
+      height:300px;
+      background: #ccc;
+      padding: 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 10px;
+    }
+    #art.highschool {
+      background-color: #0e57b4;
+      float: left;
+      width: 90%;
+      height: 400px;
+      font-size: 17px;
+      padding: 10px;
+      border-style: solid;
+      border-width: medium;
+      border-color: yellow;
+    }
+    #art.college {
+      background-color: #34c839;
+      float: left;
+      width: 100%;
+      height: 400px;
+      font-size: 17px;
+      padding: 10px;
+      border-style: solid;
+      border-width: medium;
+      border-color: black;
+    }
+    section:after {
+      content:"";
+      display:table;
+      clear: both;
+    }
+    @media (max-width: 600px) {
+      nav,article{
+        width: 100%;
+        height: auto;
+      }
+    }
+    img {
+      border-radius: 8px;
+    }
+    .rotateimg180 {
+      -webkit-transform:rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    #art.rotc {
+      border-radius: 50%;
+    }
+    </style>
   </head>
 
   <body>
-    <h1>Education History:</h1>
-    <p>
-      Contact Info:
-      <br>
-      Email - pjsacchet@loyola.edu
-      <br>
-      Cell -240-520-1974
-    </p>
+    <header>
+      <h1>Education History:</h1>
+      <p>
+        Contact Info:
+        <br>
+        Email - pjsacchet@loyola.edu
+        <br>
+        Cell -240-520-1974
+      </p>
+    </header>
     <!-- Laying out panels for navigation of the site-->
-    <div>
+  <section>
       <nav>
         <a href="index.html" title="General">General</a>
+        <br><br><br><br>
         <a href="education.html" title="Education">Education</a>
+        <br><br><br><br>
         <a href="projects.html" title="Projects">Projects</a>
+        <br><br><br><br>
         <a href="ROTC.html" title="ROTC">ROTC</a>
+        <br><br><br><br>
         <a href="Work.html" title="Work">Work Experience</a>
       </nav>
-  </div>
-    <img src="SMG_LOGO.jpg" width="150" height="200" alt="St. Maria Goretti Logo" align="right">
-    <h4>High School:</h4>
-    <h5>GPA: ~3.76</h5>
-    <p>
-      I attended high school at St. Maria Goretti, located in my hometown Hagerstown, Maryland. I graduated from there in 2016, while
-      I simultaneously accepted the Natioal Army ROTC 3-Year Scholarship which would allow me to contract with the Army at the start of
-      my Sophomore year of college.
-    </p>
-    <img src="graduation.jpg" width="400" height="300" alt="High School Graduation">
-    <h4>Undergraduate:</h4>
-    <img src="rotc.jpg" width="150" height="200" alt="Greyhound Batallion Logo" align="right">
-    <h5>GPA: ~3.55</h5>
-    <p>
-      For almost four years now I've attended Loyola University Maryland, where I major in Computer Science while minoring in Mathematics.
-      While in school, I take part in our Army ROTC program on campus, serve as our Army Ten Miler Team captain, UAV Club Co-President,
-      and member of our Cybersecurity Club. In addition, I work part time in our Technology Services department as a Stduent Technician.
-      I thoroughly enjoy the work I do in my Computer Science and Math related coursework, along with the physcial and mental challenges
-      of ROTC.
-    </p>
-    <img src="loyolabanner.jpg" width="500" height="100" alt="Loyola University Maryland Banner">
+
+      <article id="art" class="highschool">
+        <img src="SMG_LOGO.jpg" width="150" height="200" alt="St. Maria Goretti Logo" align="right">
+        <h4>High School:</h4>
+        <h5>GPA: ~3.76</h5>
+        <p>
+          I attended high school at St. Maria Goretti, located in my hometown Hagerstown, Maryland. I graduated from there in 2016, while
+          I simultaneously accepted the Natioal Army ROTC 3-Year Scholarship which would allow me to contract with the Army at the start of
+          my Sophomore year of college.
+        </p>
+        <img src="graduation.jpg" width="400" height="220" alt="High School Graduation" align="right">
+        <img src="gorettixc.jpg" width="400" height="220" alt="Cross Country Team Photo" align="left">
+      </article>
+
+      <article id="art" class="college">
+        <h4>Undergraduate:</h4>
+        <img id="art" class="rotc" src="rotc.jpg" width="150" height="200" alt="Greyhound Batallion Logo" align="right">
+        <h5>GPA: ~3.55</h5>
+        <p>
+          For almost four years now I've attended Loyola University Maryland, where I major in Computer Science while minoring in Mathematics.
+          While in school, I take part in our Army ROTC program on campus, serve as our Army Ten Miler Team captain, UAV Club Co-President,
+          and member of our Cybersecurity Club. In addition, I work part time in our Technology Services department as a Stduent Technician.
+          I thoroughly enjoy the work I do in my Computer Science and Math related coursework, along with the physcial and mental challenges
+          of ROTC.
+        </p>
+        <img src="loyolabanner1.jpg" width="500" height="150" alt="Loyola University Maryland Banner">
+        <img src="atm.jpg" width="350" height="200" alt="Army Ten Miler Team Picture" align="right" class="rotateimg180">
+      </article>
+    </section>
   </body>
 
 </html>
