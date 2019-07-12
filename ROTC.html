@@ -20,7 +20,7 @@
     }
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background-color: #3f82d8;
+      background-color: #d3d2cd;
     }
     header {
       background-color: #666;
@@ -32,7 +32,7 @@
     nav {
       float:left;
       width: 10%;
-      height:300px;
+      height:600px;
       background: #ccc;
       padding: 20px;
     }
@@ -48,16 +48,32 @@
       height: 300px;
       font-size: 20px;
     }
+    #art.rotc {
+      background-color: #91967f;
+      float: left;
+      width: 90%;
+      height: 600px;
+      font-size: 17px;
+      padding: 10px;
+      border-style: solid;
+      border-width: thin;
+      border-color: black;
+    }
+    #art.second {
+      background-color: #bab79f;
+      float: left;
+      width: 100%;
+      height: 500px;
+      font-size: 17px;
+      padding: 10px;
+      border-style: solid;
+      border-width: thin;
+      border-color: black;
+    }
     section:after {
       content:"";
       display:table;
       clear: both;
-    }
-    footer {
-      background-color: #777;
-      padding: 5px;
-      text-align: center;
-      color: white;
     }
     @media (max-width: 600px) {
       nav,article{
@@ -74,7 +90,6 @@
   <body>
     <header>
       <h1>What is Army ROTC?</h1>
-      <img src="rotcbanner.jpg" width="700" height="300" alt="Loyola/Towson ROTC Banner" align="right">
       <p>
         Contact Info:
         <br>
@@ -87,17 +102,19 @@
     <section>
       <nav>
         <a href="index.html" title="General">General</a>
-        <br><br><br>
+        <br><br><br><br>
         <a href="education.html" title="Education">Education</a>
-        <br><br><br>
+        <br><br><br><br>
         <a href="projects.html" title="Projects">Projects</a>
-        <br><br><br>
+        <br><br><br><br>
         <a href="ROTC.html" title="ROTC">ROTC</a>
-        <br><br><br>
+        <br><br><br><br>
         <a href="Work.html" title="Work">Work Experience</a>
+        <br><br><br><br>
+        <img src="armylogo.jpg" width="100" height="100" alt="United States Army" align="bottom">
       </nav>
 
-      <article>
+      <article id="art" class="rotc">
         <h3>A Brief Overview:</h3>
         <p>
           In taking part of our Army ROTC (Reserve Officers' Training Corps) program at Loyola (link <a href="https://www.loyola.edu/academics/rotc" title="Loyola ROTC">here</a>)
@@ -131,13 +148,15 @@
                 access their abilities in serving as leaders and soldiers on the battlefield.
               </p>
             </ul>
-          </article
-
-      <h3>My Goals as a Second Lieutenant:</h3>
-        <p>
-          Upon commissioning, I hope to branch Cyber National Guard, serving to better improve our nation's defensive and offensive operations in the realm of cybersecurity.
-          Simultaneously, I hope to attend graduate school to obtain my Masters in Cybersecurity while working full time as a Software Engineer for Raytheon.
-        </p>
+          </article>
+      <article id="art" class="second">
+        <h3>My Goals as a Second Lieutenant:</h3>
+          <p>
+            Upon commissioning, I hope to branch Cyber National Guard, serving to better improve our nation's defensive and offensive operations in the realm of cybersecurity.
+            Simultaneously, I hope to attend graduate school to obtain my Masters in Cybersecurity while working full time as a Software Engineer for Raytheon.
+          </p>
+        <img src="rotcbanner.jpg" width="1100" height="350" alt="Loyola/Towson ROTC Banner" align="top">
+      </article>
     <section>
   </body>
 
