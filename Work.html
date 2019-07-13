@@ -14,46 +14,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A quick overview of Patrick's Work Experience">
     <title>Patrick's Work Experience</title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #d3d2cd;
+    }
+    header {
+      background-color: #666;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+    }
+    nav {
+      float:left;
+      width: 10%;
+      height:300px;
+      background: #ccc;
+      padding: 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 10px;
+    }
+    #art.technician {
+      background-color: #58cf24;
+      float: left;
+      width: 90%;
+      height: 300px;
+      font-size: 17px;
+      padding: 10px;
+      border-style: solid;
+      border-width: thin;
+      border-color: black;
+    }
+    #art.raytheon {
+      background-color: #ff0f0f;
+      float: left;
+      width: 100%;
+      height: 300px;
+      font-size: 17px;
+      padding: 10px;
+      border-style: solid;
+      border-width: thin;
+      border-color: black;
+    }
+    section:after {
+      content:"";
+      display:table;
+      clear: both;
+    }
+    footer {
+      background-color: #777;
+      padding: 5px;
+      text-align: center;
+      color: white;
+    }
+    @media (max-width: 600px) {
+      nav,article{
+        width: 100%;
+        height: auto;
+      }
+    }
+    img {
+      border-radius: 8px;
+    }
+    #art.loyola {
+      border-radius: 30%;
+    }
+    </style>
   </head>
 
   <body>
-    <h1>Work Experience:</h1>
-    <p>
-      Contact Info:
-      <br>
-      Email - pjsacchet@loyola.edu
-      <br>
-      Cell -240-520-1974
+    <header>
+      <h1>Work Experience:</h1>
+      <p>
+        Contact Info:
+        <br>
+        Email - pjsacchet@loyola.edu
+        <br>
+        Cell -240-520-1974
     </p>
+    </header>
     <!-- Laying out panels for navigation of the site-->
-    <div>
+    <section>
       <nav>
         <a href="index.html" title="General">General</a>
+        <br><br><br>
         <a href="education.html" title="Education">Education</a>
+        <br><br><br>
         <a href="projects.html" title="Projects">Projects</a>
+        <br><br><br>
         <a href="ROTC.html" title="ROTC">ROTC</a>
+        <br><br><br>
         <a href="Work.html" title="Work">Work Experience</a>
       </nav>
-    </div>
-    <h3>Student Technician</h3>
-    <h4>Location: Loyola University Maryland</h4>
-    <h4>Duration: 2016 - Present</h4>
-    <p>
-      While working at Loyola as a Student Technician I have had experience troubleshooting issues students encounter on sides relating to both hardware and
-      software. These issues include: Wifi connectivity, HD and SSD repair/data replacement/transfer, virus detection/removal and application troubleshooting
-      on both Windows and Mac platforms. Along with this, I have gained inccredible experience working with 'customers' that has tested my ability to work both alone
-      and with my team members to solve issues encountered by students.
-    </p>
-    <h3>Software Engineering Intern</h3>
-    <h4>Location: Raytheon</h4>
-    <h4>Duration: 2018 - Present</h4>
-    <p>
-      In looking for some sort of programnming job in a military/government associated company I applied for the National Security Scholarship Program. It was
-      through this process I successfully obtained a T.S. security clearance which would allow me to receive an offer from Raytheon working as a Software Engineer
-      in their cybersecurity field. Since I've started, I've gotten to work with projects concerning: antivirus characterization, malware signature detection and
-      reverse engineering. I hope to continue my work and experience in this field so to one day be able to call it my career.
-    </p>
-    <img src="raytheoncyber.jpg" width="900" height="300" alt="Raytheon Cyber Logo" align="middle">
+
+      <article id="art" class="technician">
+        <img id="art" class="loyola" src="loyolalogo.jpg" width="100" height="100" alt="Loyola Logo" align="right">
+        <h3>Student Technician</h3>
+        <h4>Location: Loyola University Maryland</h4>
+        <h4>Duration: 2016 - Present</h4>
+          <p>
+            While working at Loyola as a Student Technician I have had experience troubleshooting issues students encounter on sides relating to both hardware and
+            software. These issues include: Wifi connectivity, HD and SSD repair/data replacement/transfer, virus detection/removal and application troubleshooting
+            on both Windows and Mac platforms. Along with this, I have gained inccredible experience working with 'customers' that has tested my ability to work both alone
+            and with my team members to solve issues encountered by students.
+          </p>
+      </article>
+
+
+      <article id="art" class="raytheon">
+        <h3>Software Engineering Intern</h3>
+        <h4>Location: Raytheon</h4>
+        <h4>Duration: 2018 - Present</h4>
+          <p>
+            In looking for some sort of programnming job in a military/government associated company I applied for the National Security Scholarship Program. It was
+            through this process I successfully obtained a T.S. security clearance which would allow me to receive an offer from Raytheon working as a Software Engineer
+            in their cybersecurity field. Since I've started, I've gotten to work with projects concerning: antivirus characterization, malware signature detection and
+            reverse engineering. I hope to continue my work and experience in this field so to one day be able to call it my career.
+          </p>
+      </article>
+    </section>
+
+    <footer>
+      <img src="raytheoncyber.jpg" width="700" height="300" alt="Raytheon Cyber Logo" align="middle">
+      <img src="loyolaflag.jpg" width="300" height="300" alt="Loyola Maryland Flag" align="left">
+      <img src="raytheon.jpg" width="300" height="300" alt="Raytheon Cyber" align="right">
+    </footer>
 
 
 
