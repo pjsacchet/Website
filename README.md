@@ -1,6 +1,7 @@
 # Website
 ### Author: Patrick Sacchet
 ### Start Date: 7/8/19
+### Version 1.0 - 7/12/19 
 ### www.patricksacchet.com
 # How:
 Using Google Domains, my own Raspberry Pi and router configuration I have successfully started and hosted my own website using my Raspberry Pi. In doing this, I have implemented
@@ -14,4 +15,4 @@ a place where I can showcase my projects.
 The only true challenge I faced was in regards to my router configuration settings, as they
 can be difficult to set and change depending on your ISP/brand of router. I plan to continue
 development of my website to create something truly captivating and enjoyable for both
-the user and myself, next implementing the use of CSS and JavaScript to create something truly personalized. 
+the user and myself, next implementing the use of CSS and JavaScript to create something truly personalized.
